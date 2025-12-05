@@ -1,0 +1,27 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "vision": "Vision",
+        "biography": "Biography",
+        "media": "Media",
+        "contact": "Contact",
+        "admin": "Admin"
+    },
+    "Hero": {
+        "title": "Building a Progressive Nepal",
+        "description": "I am Janardan Sharma 'Pravakar', the ideological guide of the Progressive Democratic Party and former Deputy Secretary General of the Maoist Centre. Having served as Finance Minister, Home Minister, and Energy Minister of Nepal, I worked to end the energy crisis, ensure economic stability, and strengthen the peace process. My main goal is inclusive nationalism, economic self-reliance, youth empowerment, and social justice – which I am advancing through a youth-led progressive campaign.",
+        "readVision": "Read Vision",
+        "biography": "Biography"
+    },
+    "BioTeaser": {
+        "title": "A Life Dedicated to the People",
+        "p1": "Janardan Sharma 'Pravakar' is a prominent political figure in Nepal, known for his dynamic leadership and unwavering commitment to the nation's progress.",
+        "p2": "From his early involvement in student movements to leading key ministries, his journey reflects a deep dedication to social justice, federalism, and economic prosperity.",
+        "readMore": "Read Full Biography"
+    },
+    "Media": {
+        "title": "Media Gallery",
+        "subtitle": "Capturing the moments of movement and change.",
+        "noItems": "No media items available at the moment."
+    }
+}
