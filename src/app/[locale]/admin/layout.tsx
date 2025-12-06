@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter, usePathname, Link } from '@/navigation'; // Use localized navigation
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
-import { Loader2, LayoutDashboard, FileText, Image as ImageIcon, Settings, LogOut } from 'lucide-react';
+import { Loader2, LayoutDashboard, FileText, Image as ImageIcon, Settings, LogOut, BookOpen } from 'lucide-react';
 import { getAuth, signOut } from 'firebase/auth';
 import { app } from '@/lib/firebase';
 
@@ -36,7 +36,7 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <div className="flex min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div className="flex min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
             {/* Sidebar */}
             <aside className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 hidden md:flex flex-col">
                 <div className="p-6 border-b border-gray-200 dark:border-gray-700">
@@ -54,6 +54,10 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
                     <Link href="/admin/media" className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${pathname.startsWith('/admin/media') ? 'bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400' : 'text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-700'}`}>
                         <ImageIcon className="h-5 w-5" />
                         Media Gallery
+                    </Link>
+                    <Link href="/admin/biography" className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${pathname.startsWith('/admin/biography') ? 'bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400' : 'text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-700'}`}>
+                        <BookOpen className="h-5 w-5" />
+                        Biography
                     </Link>
                     <Link href="/admin/settings" className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${pathname.startsWith('/admin/settings') ? 'bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400' : 'text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-700'}`}>
                         <Settings className="h-5 w-5" />

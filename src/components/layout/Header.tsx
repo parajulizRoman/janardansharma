@@ -28,6 +28,7 @@ export function Header() {
                         {/* <Link href="/news" className="hover:text-white transition-colors">News</Link> */}
                         {/* <Link href="/events" className="hover:text-white transition-colors">Events</Link> */}
                         <Link href="/media" className="hover:text-white transition-colors">{t('media')}</Link>
+                        <Link href="/press" className="hover:text-white transition-colors">{t('press')}</Link>
                         <Link href="/contact" className="hover:text-white transition-colors">{t('contact')}</Link>
                         <Link href="/admin" className="hover:text-white transition-colors">{t('admin')}</Link>
                     </nav>

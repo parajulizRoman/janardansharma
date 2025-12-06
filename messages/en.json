@@ -5,6 +5,7 @@
         "biography": "Biography",
         "media": "Media",
         "contact": "Contact",
+        "press": "Press",
         "admin": "Admin"
     },
     "Hero": {
@@ -21,7 +22,62 @@
     },
     "Media": {
         "title": "Media Gallery",
-        "subtitle": "Capturing the moments of movement and change.",
-        "noItems": "No media items available at the moment."
+        "subtitle": "Capturing Moments, Inspiring Change",
+        "noItems": "No media items available yet.",
+        "photosTitle": "Photo Gallery",
+        "videosTitle": "Video Gallery"
+    },
+    "Press": {
+        "title": "Press & Social Media",
+        "description": "Latest news coverage, social media highlights, and public statements.",
+        "socialTitle": "Social Highlights",
+        "newsTitle": "In the News",
+        "noItems": "No press items found."
+    },
+    "Biography": {
+        "title": "Janardan Sharma 'Pravakar'",
+        "subtitle": "A leader forged in struggle, dedicated to peace, and committed to the prosperity of Nepal.",
+        "introTitle": "Introduction",
+        "introP1": "Janardan Sharma, popularly known by his nom de guerre 'Pravakar', is a visionary leader and a key architect of Nepal's political transformation. From the rugged hills of Rukum to the corridors of Singha Durbar, his journey is a testament to resilience and unwavering commitment to the people.",
+        "introP2": "As a prominent leader of the Communist Party of Nepal (Maoist Centre), he played a crucial role in the People's War, the peace process, and the drafting of the federal democratic republican constitution.",
+        "contributionsTitle": "Key Contributions",
+        "contribution1Title": "Ending Load-Shedding",
+        "contribution1Desc": "As Minister of Energy, he led the historic campaign to eliminate chronic power cuts, revolutionizing the energy sector.",
+        "contribution2Title": "Peace Process",
+        "contribution2Desc": "Played a vital role in the integration of Maoist combatants and the management of arms, ensuring a smooth transition to peace.",
+        "contribution3Title": "Federalism",
+        "contribution3Desc": "A fierce advocate for federalism, ensuring rights and representation for marginalized communities and remote regions.",
+        "journeyTitle": "Political Journey",
+        "personalTitle": "Personal Life",
+        "personalText": "Beyond politics, Janardan Sharma is known for his literary interests, often expressing his thoughts through poetry and articles. He remains deeply connected to his roots in Rukum, frequently visiting and engaging with local communities to understand their evolving needs.",
+        "familyTitle": "Family Background",
+        "father": "Father",
+        "mother": "Mother",
+        "timeline": {
+            "energyTitle": "Minister of Energy",
+            "energySummary": "Led the 'Ujyalo Nepal' campaign, successfully ending years of chronic load-shedding.",
+            "energyDetailP1": "As the Minister for Energy, Janardan Sharma, along with the appointed Managing Director of the Nepal Electricity Authority (NEA) Kul Man Ghising, led an \"uninterrupted power supply campaign\" (often referred to as ending load shedding) through a combination of managerial, technical, and policy changes. The ministry's efforts focused on optimum utilization of existing resources and systemic reforms.",
+            "energyStepsTitle": "Key Steps Taken:",
+            "energyStep1Title": "Appointment of Key Leadership",
+            "energyStep1Desc": "A crucial step was the appointment of Kul Man Ghising as the Managing Director of the NEA in September 2016. The political leadership from the Ministry provided essential backing for the management to implement tough reforms.",
+            "energyStep2Title": "Optimal Load Management",
+            "energyStep2Desc": "The core strategy involved efficient management and equitable distribution of the available electricity supply. This included balancing loads across different substations and prioritizing domestic supply over certain industrial demands during peak hours.",
+            "energyStep3Title": "Halting Unnecessary Power Cuts",
+            "energyStep3Desc": "The Ministry and NEA stopped the practice of announcing prolonged load-shedding schedules for major cities like Kathmandu Valley, making a commitment to not increase power cuts.",
+            "energyStep4Title": "Infrastructure Improvements",
+            "energyStep4Desc": "The plan involved a directive to speed up the completion of critical infrastructure projects, notably the Khimti-Dhalkebar 220 kV transmission line, which was essential for bringing more power into the grid.",
+            "energyStep5Title": "Minimizing Technical Leakage",
+            "energyStep5Desc": "Efforts were initiated to check and reduce high levels of power leakage (technical and commercial losses) within the distribution system.",
+            "energyStep6Title": "Import Optimization",
+            "energyStep6Desc": "The strategy involved optimizing electricity imports from neighboring India to cover the domestic demand-supply gap.",
+            "energyStep7Title": "Policy and Work Plan Implementation",
+            "energyStep7Desc": "The Ministry introduced a 37-point work plan aimed at resolving the energy crisis, which included focusing on the completion of under-construction hydropower projects and seeking alternative energy sources like solar.",
+            "energyStep8Title": "Public Awareness and Investment Drive",
+            "energyStep8Desc": "Sharma initiated the \"Nepal's Water, People's Investment\" (नेपालको पानी, जनताको लगानी) campaign to encourage domestic investment in the energy sector.",
+            "energyStep9Title": "Tackling Corruption and Mismanagement",
+            "energyStep9Desc": "Sharma highlighted that addressing deep-seated issues of mismanagement, corruption, and inefficiency within the power sector was key to the reforms.",
+            "energyConclusion": "These collective actions led to the elimination of the chronic load shedding that Nepal had experienced for decades, with the Ministry declaring load shedding a \"subject of history\".",
+            "sourcesTitle": "References & Citations"
+        }
     }
 }

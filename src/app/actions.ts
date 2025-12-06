@@ -54,8 +54,13 @@ export async function createPost(data: CreatePostData) {
     }
 }
 
-export async function uploadMediaItem(data: { title: string, url: string, type: 'image' | 'video' }) {
+export async function uploadMediaItem(data: { title: string, title_np?: string, url: string, type: 'image' | 'video' }) {
     if (!data.url) return { error: 'Missing URL' };
+
+    // Auto-translate (Mock: duplicate if missing)
+    if (!data.title_np) {
+        data.title_np = data.title;
+    }
 
     try {
         const { data: newItem, error } = await supabaseAdmin
@@ -104,5 +109,48 @@ export async function getSiteSettings() {
     } catch (err: any) {
         console.error('Fetch Settings Error:', err);
         return {};
+    }
+}
+
+export async function syncBioGalleryToMedia(urls: string[]) {
+    let count = 0;
+    try {
+        for (const url of urls) {
+            // Check if exists
+            const { data: existing } = await supabaseAdmin
+                .from('media')
+                .select('id')
+                .eq('url', url)
+                .single();
+
+            if (!existing) {
+                // Insert
+                await supabaseAdmin.from('media').insert([{
+                    title: 'Bio Gallery Import',
+                    title_np: 'Bio Gallery Import', // Placeholder for auto-translate
+                    url: url,
+                    type: 'image',
+                    created_at: new Date().toISOString()
+                }]);
+                count++;
+            }
+        }
+        return { success: true, count };
+    } catch (err: any) {
+        return { error: err.message };
+    }
+}
+
+export async function updateMediaItem(id: number, data: any) {
+    try {
+        const { error } = await supabaseAdmin
+            .from('media')
+            .update(data)
+            .eq('id', id);
+
+        if (error) throw error;
+        return { success: true };
+    } catch (err: any) {
+        return { error: err.message };
     }
 }
